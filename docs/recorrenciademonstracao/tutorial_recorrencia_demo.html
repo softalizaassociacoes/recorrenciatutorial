@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pagamento automático por cartão (recorrência) - Softaliza Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; color: #1f2937; margin: 0; background: #f7f7f9; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 24px; background: #fff; }
+    h1, h2 { color: #111827; }
+    p, li { line-height: 1.5; }
+    .note { background: #eef6ff; border-left: 4px solid #2f74d0; padding: 12px; margin: 16px 0; }
+    figure { margin: 18px 0 26px; }
+    img { width: 100%; height: auto; border: 1px solid #e5e7eb; border-radius: 8px; }
+    figcaption { font-size: 14px; color: #4b5563; margin-top: 8px; }
+    .small-img img { max-width: 460px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Pagamento automático por cartão (recorrência)</h1>
+
+    <p>Este tutorial apresenta, de forma objetiva, como funciona a recorrência por cartão no ambiente de demonstração da Softaliza. A funcionalidade permite que a associação cobre automaticamente mensalidades ou anuidades no cartão do associado, conforme a configuração financeira da categoria.</p>
+
+    <div class="note">
+      <strong>Importante:</strong> a associação define quais meios de pagamento ficam disponíveis por modalidade/categoria. Dependendo da configuração, o associado pode visualizar <strong>PIX, boleto, cartão de crédito e pagamento automático</strong>, ou apenas <strong>pagamento automático</strong>. Esse ajuste é feito no painel administrativo e impacta diretamente a experiência do associado.
+    </div>
+
+    <h2>1) Como o associado ativa a recorrência</h2>
+    <p>Na área restrita do associado, acesse <strong>Cobranças</strong> e clique em <strong>Pagar</strong> na competência disponível. Em seguida, selecione <strong>Pagamento automático</strong>.</p>
+    <p>Quando a categoria estiver configurada com múltiplos meios, o sistema exibirá também PIX, boleto e cartão avulso. Se a associação optar por recorrência exclusiva na modalidade, o associado verá somente a opção automática.</p>
+    <figure>
+      <img src="recorrencia_demo_01_pagamento.png" alt="Tela de escolha de pagamento com recorrência" />
+      <figcaption>Tela de escolha de forma de pagamento com recorrência.</figcaption>
+    </figure>
+
+    <h2>2) Como salvar o cartão para uso futuro</h2>
+    <p>Ao preencher os dados do cartão, marque a opção de armazenamento para não precisar redigitar em cobranças futuras.</p>
+    <p>Esse comportamento reduz atrito na renovação e melhora a continuidade da cobrança automática em ciclos seguintes.</p>
+    <figure class="small-img">
+      <img src="recorrencia_demo_02_salvar_cartao.png" alt="Opção de salvar cartão" />
+      <figcaption>Opção “Salvar e tornar padrão este cartão para pagamentos futuros”.</figcaption>
+    </figure>
+
+    <h2>3) Confirmação da adesão recorrente</h2>
+    <p>Com os dados preenchidos e a recorrência habilitada, avance para <strong>Confirmar pagamento</strong>.</p>
+    <p>No ambiente real, após autorização da transação, o sistema passa a aplicar a regra da modalidade: cobrança mensal para mensalidades e renovação anual para anuidades.</p>
+    <figure>
+      <img src="recorrencia_demo_03_confirmacao.png" alt="Confirmação da adesão recorrente" />
+      <figcaption>Etapa de confirmação da cobrança recorrente.</figcaption>
+    </figure>
+
+    <h2>4) Onde visualizar a recorrência no associado</h2>
+    <p>No painel administrativo, em <strong>Gestão de Associados &gt; Histórico de pagamentos</strong> do associado, é possível consultar dados cadastrais e cobranças vinculadas ao perfil.</p>
+    <p>Essa área é o ponto recomendado para suporte validar categoria/modalidade, status do associado e contexto da cobrança antes de qualquer ajuste.</p>
+    <figure>
+      <img src="recorrencia_demo_04_associado.png" alt="Registro da recorrência no associado" />
+      <figcaption>Registro no associado para apoio operacional e suporte.</figcaption>
+    </figure>
+
+    <h2>5) Onde visualizar a recorrência no financeiro</h2>
+    <p>Em <strong>Controle Financeiro &gt; Pagamentos</strong>, a associação acompanha os lançamentos, forma de pagamento e status (ex.: pago, recusado, aguardando).</p>
+    <p>Com essa visão consolidada, o time consegue acompanhar o desempenho da recorrência e agir rapidamente em casos de falha de cobrança.</p>
+    <figure>
+      <img src="recorrencia_demo_05_financeiro.png" alt="Registro financeiro da cobrança automática" />
+      <figcaption>Visão financeira consolidada da cobrança automática.</figcaption>
+    </figure>
+
+    <h2>Observações técnicas relevantes</h2>
+    <ul>
+      <li>A recorrência depende da configuração de categoria/modalidade feita pela associação no painel administrativo.</li>
+      <li>O botão de confirmação depende da validação dos campos obrigatórios do cartão e das opções de recorrência exigidas no fluxo.</li>
+      <li>Ambientes de demonstração podem ter estados simulados e variações de atualização visual.</li>
+      <li>Para governança financeira, recomenda-se revisar periodicamente os status de cobrança e manter a configuração das categorias alinhada à política da associação.</li>
+    </ul>
+  </main>
+</body>
+</html>
