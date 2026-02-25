@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tutorial QCB - Recorrência Mensal</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 32px auto; max-width: 980px; line-height: 1.5; color: #1f2937; }
+    h1, h2 { color: #0f172a; }
+    h1 { margin-bottom: 8px; }
+    h2 { margin-top: 26px; margin-bottom: 8px; }
+    p, li { font-size: 15px; }
+    .shot { margin: 12px 0 18px; }
+    .shot img { width: 100%; border: 1px solid #e5e7eb; border-radius: 8px; }
+    .caption { font-size: 13px; color: #475569; margin-top: 6px; }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Pagamento automático por cartão (recorrência) – cenário Sócio Mensal (QCB)</h1>
+
+  <h2>Descrição breve da funcionalidade</h2>
+  <p>Neste cenário validado no ambiente QCB, o associado está na modalidade <strong>Associado(a) Mensal</strong> e a cobrança apresenta <strong>somente Pagamento automático</strong> via cartão. A recorrência mensal fica padronizada para esta modalidade, reduzindo inadimplência por esquecimento e simplificando a continuidade de cobrança.</p>
+  <p>Regra operacional importante: a associação pode configurar, por modalidade, se quer disponibilizar <strong>Pix, boleto e cartão</strong> ou <strong>apenas pagamento automático</strong>. Portanto, as opções exibidas para o associado variam conforme a parametrização vigente.</p>
+
+  <h2>Como o associado ativa a recorrência (mensal)</h2>
+  <div class="shot">
+    <img src="recorrencia_mensal_01_pagamento.png" alt="Forma de pagamento com recorrência" />
+    <div class="caption">Cobrança mensal com forma de pagamento automática.</div>
+  </div>
+  <p>Caminho: <strong>Associado &gt; Cobranças &gt; PAGAR</strong>. Na competência mensal, selecione <strong>Pagamento automático</strong>. Ao selecionar, a interface exibe os blocos de endereço, dados de cartão e regras da recorrência.</p>
+
+  <h2>Como salvar o cartão para uso futuro</h2>
+  <div class="shot">
+    <img src="recorrencia_mensal_02_salvar_cartao.png" alt="Salvar cartão" />
+    <div class="caption">Opção para salvar o cartão e torná-lo padrão.</div>
+  </div>
+  <p>Marque <strong>Salvar e tornar padrão este cartão para pagamentos futuros</strong>. Isso evita redigitação nas próximas cobranças e melhora a experiência de renovação recorrente.</p>
+
+  <h2>Como funciona a cobrança automática mensal</h2>
+  <div class="shot">
+    <img src="recorrencia_mensal_03_confirmacao.png" alt="Confirmação recorrência mensal" />
+    <div class="caption">Preenchimento do cartão e confirmação do fluxo recorrente.</div>
+  </div>
+  <p>Após preencher número, nome no cartão, validade e CVV, conclua em <strong>Confirmar pagamento</strong>. A UI informa que a cobrança da mensalidade será feita automaticamente no dia configurado para o ciclo mensal.</p>
+
+  <h2>Onde visualizar a recorrência no sistema</h2>
+  <div class="shot">
+    <img src="recorrencia_mensal_04_associado.png" alt="Registro no associado" />
+    <div class="caption">Histórico do associado em modalidade mensal.</div>
+  </div>
+  <p>No cadastro administrativo do associado (Histórico de Pagamentos), confirme modalidade, competências e coluna de status/forma de pagamento para análise individual.</p>
+
+  <div class="shot">
+    <img src="recorrencia_mensal_05_financeiro.png" alt="Registro financeiro" />
+    <div class="caption">Controle Financeiro &gt; Pagamentos (visão consolidada).</div>
+  </div>
+  <p>No painel financeiro, a associação acompanha status das cobranças, vencimentos e forma de pagamento em visão consolidada para operação e suporte.</p>
+
+  <h2>Observações técnicas</h2>
+  <ul>
+    <li>Capturas realizadas diretamente no ambiente QCB, sem telas simuladas.</li>
+    <li>Neste cenário mensal, a forma disponível foi apenas Pagamento automático.</li>
+    <li>A disponibilidade de Pix/Boleto/Cartão ou apenas automático depende da configuração da modalidade pela associação.</li>
+    <li>Na validação da interface, não houve popup explícito de sucesso; recomenda-se confirmar operação pelo histórico do associado e pelo painel financeiro.</li>
+  </ul>
+</body>
+</html>
