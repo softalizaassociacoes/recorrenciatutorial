@@ -50,9 +50,18 @@ Em **Controle Financeiro > Pagamentos**, a associação acompanha os lançamento
 
 Essa tela consolida o acompanhamento financeiro e permite monitorar comportamento da recorrência em escala, com filtros e ações administrativas. Com essa visão, a equipe acompanha rapidamente quais pagamentos foram liquidados, recusados ou pendentes, e consegue priorizar ações de reprocessamento e contato com associados quando necessário.
 
-## Observações técnicas relevantes
+## 6) Como cancelar a recorrência
 
-- A recorrência depende da configuração de categoria/modalidade feita pela associação no painel administrativo.
-- O comportamento de habilitação do botão de confirmação depende da validação dos campos obrigatórios (cartão, vencimento, código de verificação e opção de recorrência, quando exigida).
-- O demo pode apresentar diferenças de tempo de atualização e alguns estados simulados; para operação real, considerar integração ativa de pagamentos e regras de liquidação da conta.
-- Para governança financeira, recomenda-se validar periodicamente os status no módulo de pagamentos e manter regras de categoria alinhadas com a política de cobrança da associação.
+Quando a recorrência já está ativa, o associado pode cancelar diretamente na seção **Pagamento recorrente**, clicando no botão **Cancelar recorrência**.
+
+![Ação para cancelar recorrência](recorrencia_demo_06_cancelar_acao.png)
+
+Após clicar em cancelar, o sistema abre um modal de confirmação explicando os efeitos do cancelamento:
+- não haverá novas cobranças automáticas após o período já pago;
+- o acesso permanece ativo até o vencimento da mensalidade/anuidade quitada;
+- para continuar depois disso, será necessário realizar novo pagamento manual.
+
+![Modal de confirmação do cancelamento](recorrencia_demo_07_cancelar_confirmacao.png)
+
+Para concluir, o usuário confirma em **Sim, cancelar**.  
+Observação: este passo está documentado com base na interface exibida no sistema e no texto de confirmação apresentado em tela.
